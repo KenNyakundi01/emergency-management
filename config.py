@@ -1,7 +1,9 @@
-
 import os
 
 class Config:
+	'''
+	parent configuration
+	'''
 
 class ProdConfig(Config):
     pass

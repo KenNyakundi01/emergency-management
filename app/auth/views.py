@@ -14,7 +14,7 @@ def login():
             login_user(user,login_form.remember.data)
             return redirect(request.args.get('next') or url_for('main.index'))
         flash('Invalid username or password')
-    title = 'Emmergency|Login'
+    title = 'Emmergency-management|Login'
     return render_template('auth/login.html', login_form=login_form, title=title)
 
 @auth.route('/register', methods = ['GET', 'POST'])

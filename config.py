@@ -4,6 +4,7 @@ class Config:
 	'''
 	parent configuration
 	'''
+	SQLALCHEMY_TRACK_MODIFICATIONS=False
 
 class ProdConfig(Config):
     pass

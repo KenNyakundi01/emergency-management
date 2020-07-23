@@ -19,7 +19,6 @@ class RegistrationForm(FlaskForm):
         if User.query.filter_by(username =  data_field.data).first():
             raise ValidationError('Username is taken')
 
-
 class LoginForm(FlaskForm):
     email = StringField('Enter your Email Address',validators=[Required(),Email()])
     password = PasswordField('Password',validators=[Required()])

@@ -14,3 +14,8 @@ def index():
     welcome_message = ''
 
     return render_template('index.html', welcome_message = welcome_message )
+
+@main.route('/about')
+def about():
+	return render_template('about.html')
+
